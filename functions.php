@@ -110,3 +110,12 @@ function location_taxonomy(){
 }
 
 add_action('init', 'location_taxonomy');
+
+/**
+ * Register Custom Navigation Walker
+ * From: https://github.com/wp-bootstrap/wp-bootstrap-navwalker
+ */
+function register_navwalker(){
+	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'register_navwalker' );
