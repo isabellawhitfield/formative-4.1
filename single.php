@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 
+<h1 class="page-name">
+  <pre><code>single.php</code></pre>
+</h1>
+
 <section class="page-wrap">
 <div class="container row">
   <div class="col">
