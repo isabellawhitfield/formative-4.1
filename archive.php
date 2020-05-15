@@ -4,13 +4,11 @@
 <div class="container">
 
   <section class="row">
-    <div class="col-lg-3 widget">
-
-      <?php if(is_active_sidebar('blog-sidebar')) :?>
+    <?php if(is_active_sidebar('blog-sidebar')) :?>
+      <div class="col-lg-3 widget">
         <?php dynamic_sidebar('blog-sidebar'); ?>
-
-      <?php endif; ?>
-    </div>
+      </div>
+    <?php endif; ?>
 
     <div class="col-lg-9">
 
