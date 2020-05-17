@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 
+<h1 class="page-name">
+  <pre><code>single-plants.php</code></pre>
+</h1>
+
 <section class="page-wrap">
 <div class="container">
 

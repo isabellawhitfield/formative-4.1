@@ -10,7 +10,9 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-          <a class="navbar-brand" href="<?php print get_home_url(); ?>">Kiwanis</a>
+          <a class="navbar-brand" href="<?php print get_home_url(); ?>">
+            <img class="site-logo" src="<?php bloginfo('stylesheet_directory') ?>/images/kiwanis-logo.png" alt="Kiwanis logo">
+          </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -31,4 +33,6 @@
       </nav>
     </header>
 
-    <div class="container py-3">
+    <div class="container py-3 site-wrapper">
+      <main>
+

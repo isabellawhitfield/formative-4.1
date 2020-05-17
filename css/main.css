@@ -12,3 +12,8 @@
 .footer {
   min-height: 200px;
 }
+
+.site-wrapper {
+  /* Poor-man's sticky footer */
+  min-height: calc(100vh - 301px)
+}
