@@ -72,32 +72,32 @@ add_action('widgets_init', 'my_sidebars');
 
 
 // custom post type
-function my_first_post_type(){
+function newsletter_post_type(){
   $args = array(
     'labels' => array(
-        'name' => 'Plants',
-        'singular_name' => 'Plant',
+        'name' => 'Newsletters',
+        'singular_name' => 'Newsletter',
     ),
-  'hierarchical' => true, //booleans value toggles between pages & posts without labels
-  'menu_icon' => 'dashicons-palmtree',
+  'hierarchical' => false, //booleans value toggles between pages & posts without labels
+  'menu_icon' => 'dashicons-format-aside',
   'public' => true,
   'has_archive' => true,
-  'supports' => array('title', 'editor', 'thumbnail','custom-fields'),// if one of the argument is  not mentioned,
+  // 'supports' => array('title', 'editor', 'thumbnail','custom-fields'),// if one of the argument is  not mentioned,
   //if makes difference in features
 
 );
-  register_post_type('plants',$args);
+  register_post_type('newsletters',$args);
 }
-add_action('init','my_first_post_type');
+add_action('init','newsletter_post_type');
 
 
 // Taxanomy
 
-function my_first_taxonomy(){
+function location_taxonomy(){
   $args = array(
     'labels' => array(
-      'name' => 'Types',
-      'singular_name' => 'Type',
+      'name' => 'Locations',
+      'singular_name' => 'Location',
     ),
 
     'public' => true,
@@ -105,8 +105,8 @@ function my_first_taxonomy(){
 
 
   );
-  register_taxonomy('types', array('plants'),$args);
+  register_taxonomy('types', array('newsletters'),$args);
 
 }
 
-add_action('init', 'my_first_taxonomy');
+add_action('init', 'location_taxonomy');
