@@ -1,5 +1,5 @@
 .page-name {
-  display: block;
+  display: none;
   position: fixed;
   bottom: 10px;
   left: 0;
@@ -11,9 +11,65 @@
 
 .footer {
   min-height: 200px;
+  color: #FAF8F088;
+}
+.footer a {
+  color: #FAF8F088;
+  text-decoration: none;
 }
 
 .site-wrapper {
   /* Poor-man's sticky footer */
   min-height: calc(100vh - 301px)
+}
+
+.bg-primary {
+  background-color: #043353 !important;
+}
+
+.btn-primary {
+  background-color: #043353;
+  border-color: #043353;
+}
+
+.nav-link {
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+  font-size: 1.5rem;
+}
+
+.container img {
+  width: 100%;
+}
+
+html {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-brand {
+    margin-right: 0;
+  }
+}
+
+.navbar-toggler {
+  font-size: 0.75rem;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link {
+  color: #FAF8F0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #FAF8F088;
+}
+
+body {
+  background-color: #FAF8F0;
+  /* background-color: #EFEFEF; */
 }

@@ -4,26 +4,21 @@ if (have_posts()) :
   while (have_posts()):
     the_post();
   ?>
-    <!-- <div class="card  mb-3 ">
-      <div class="card-body"> -->
+    <div class="card mb-3">
+      <div class="card-body">
+        <h2 class="card-title h3 mb-4"> <?php the_title(); ?>   </h2>
+        <div class="card-text">
+          <?php
+          the_excerpt();//cut of some portion of text
+          ?>
+        </div>
 
-        <!-- featured image -->
-        <?php if(has_post_thumbnail()): ?>
-            This has a featured image
-            <div>
-              <img src="<?php the_post_thumbnail_url('blog-small'); ?>" alt="<?php the_title(); ?>" class="mb-3 img-fluid img-thumbnail">
-            </div>
-      <?php endif; ?>
+        <a class="btn btn-primary" href="<?php the_permalink(); ?>"> Read more </a>
+      </div>
 
-    <h1> <?php the_title(); ?>   </h1>
+    </div>
 
-    <?php
-    the_excerpt();//cut of some portion of text
-    ?>
 
-    <a href="<?php the_permalink(); ?>" class="text-dark"> Read more </a>
-  <!-- </div>
-</div> -->
   <?php endwhile;
  else:
 endif;
