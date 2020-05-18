@@ -1,9 +1,5 @@
 <?php get_header(); ?>
 
-<h1 class="page-name">
-  <pre><code>single.php</code></pre>
-</h1>
-
 <main>
   <div class="container">
     <div>

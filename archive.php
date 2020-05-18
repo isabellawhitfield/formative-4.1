@@ -1,12 +1,5 @@
 <?php get_header(); ?>
 
-<h1 class="page-name">
-  <pre><code>archive.php</code></pre>
-</h1>
-
-
-
-
 <h1> <?php echo single_cat_title(); ?> </h1>
 <?php get_template_part('includes/section','archive'); ?>
 

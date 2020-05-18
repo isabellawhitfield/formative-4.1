@@ -1,14 +1,3 @@
-.page-name {
-  display: none;
-  position: fixed;
-  bottom: 10px;
-  left: 0;
-}
-
-.page-name * {
-  color: red;
-}
-
 .footer {
   min-height: 200px;
   color: #FAF8F088;
