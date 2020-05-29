@@ -7,8 +7,8 @@
     <?php wp_head(); ?><!-- notice the wordpress admin bar on top-->
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <header class="header-background">
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
           <a class="navbar-brand" href="<?php print get_home_url(); ?>">
             <img class="site-logo" src="<?php bloginfo('stylesheet_directory') ?>/images/kiwanis-logo.png" alt="Kiwanis logo">
